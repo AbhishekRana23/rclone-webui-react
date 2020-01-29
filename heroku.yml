@@ -2,4 +2,4 @@ build:
   docker:
     web: Dockerfile
 run:
-  web: ./webui.sh
+  web: rclone rcd --rc-user=<rana> --rc-pass=<hi> --rc-serve && npm start
