@@ -7,6 +7,7 @@ RUN apt-get update && apt install -y curl && apt-get install -y apt-utils && apt
 RUN curl -sL https://deb.nodesource.com/setup_10.x | bash -
 RUN apt install nodejs -y
 RUN curl https://rclone.org/install.sh | bash
+RUN rclone rcd --rc-web-gui --rc-user=<hi> --rc-pass=<hi> 
 RUN npm config set unsafe-perm true
 RUN chmod -R 777 /bot
 RUN npm install
