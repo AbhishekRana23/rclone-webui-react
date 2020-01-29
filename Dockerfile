@@ -9,5 +9,4 @@ RUN apt install nodejs -y
 RUN curl https://rclone.org/install.sh | bash
 RUN npm config set unsafe-perm true
 RUN chmod -R 777 /bot
-RUN ./webui.sh get
-RUN ./webui.sh build
+RUN npm install
