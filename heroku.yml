@@ -2,4 +2,4 @@ build:
   docker:
     web: Dockerfile
 run:
-  web: rclone rcd --rc-web-gui --rc-user=rana --rc-pass=hi --rc-serve
+  web: npm start
