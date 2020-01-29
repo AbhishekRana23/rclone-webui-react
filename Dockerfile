@@ -10,4 +10,3 @@ RUN curl https://rclone.org/install.sh | bash
 RUN npm config set unsafe-perm true
 RUN chmod -R 777 /bot
 RUN npm install
-RUN npm update
